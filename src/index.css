@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Handlee", cursive;
+  font-size: x-large;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-top: 1em;
+  color: rgb(0, 0, 0);
+}
+p {
+  font-size: medium;
+}
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+:visited {
+  color: rgb(33, 33, 33);
+}
+:hover {
+  color: rgb(33, 33, 33);
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
