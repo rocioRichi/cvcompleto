@@ -7,11 +7,11 @@ export default function App() {
   return (
     <>
       <Header></Header>
-      <nav className="container__container">
+      <nav className="app__main">
         <Navmenu></Navmenu>
       </nav>
-      <section className="infodisplay">
-        <div className="infodisplay__box">
+      <section className="app_infodisplay">
+        <div className="app_infodisplaybox">
           <AppRouter></AppRouter>
         </div>
       </section>

@@ -1,41 +1,34 @@
-import { EdgeLayer } from "../edgelayer/edgelayer";
+import { Topic } from "../topic/topic";
 import { Picture } from "../picture/picture";
 import "./navmenu.css";
 
 export function Navmenu() {
   return (
-    <>
-      <EdgeLayer
-        firstElement={"Contact"}
-        secondElement={"Technologies"}
-        firstEleGoTo={"contact"}
-        secondEleGotTo={"technologies"}
-      ></EdgeLayer>
-      <section className="middlelayer">
-        <EdgeLayer
-          firstElement={"Language"}
-          secondElement={"Working Experience"}
-          firstEleGoTo={"language"}
-          secondEleGotTo={"technologies"}
-        ></EdgeLayer>
+    <div className="navmenu">
+      <section className="navmenu__up">
+        <Topic topic={"Contact"} whereDoWeGo={"contact"}></Topic>
+        <Topic topic={"Technologies"} whereDoWeGo={"technologies"}></Topic>
+      </section>
+
+      <section className="navmenu__mediumlayer">
+        <section className="navmenu__leftlayer">
+          <Topic topic={"Language"} whereDoWeGo={"language"}></Topic>
+          <Topic topic={"Hobbies"} whereDoWeGo={"hobbies"}></Topic>
+        </section>
 
         <article>
           <Picture></Picture>
         </article>
 
-        <EdgeLayer
-          firstElement={"Education"}
-          secondElement={`Programming  Exercise`}
-          firstEleGoTo={"education"}
-          secondEleGotTo={"technologies"}
-        ></EdgeLayer>
+        <section className="navmenu__rightlayer">
+          <Topic topic={"Education"} whereDoWeGo={"education"}></Topic>
+          <Topic topic={"Project"} whereDoWeGo={"project"}></Topic>
+        </section>
       </section>
-      <EdgeLayer
-        firstElement={"Hobbies"}
-        secondElement={"Who I am"}
-        firstEleGoTo={"hobbies"}
-        secondEleGotTo={"technologies"}
-      ></EdgeLayer>
-    </>
+
+      <section className="navmenu__down">
+        <Topic topic={"Work Experience"} whereDoWeGo={"experience"}></Topic>
+      </section>
+    </div>
   );
 }
