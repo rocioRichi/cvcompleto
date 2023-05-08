@@ -19,3 +19,27 @@
   border-radius: -15px;
   align-self: center;
 }
+.header__left {
+  width: 70%;
+}
+.header__right {
+  width: 70%;
+}
+.header__center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.header__logosandname {
+  display: flex;
+  align-items: center;
+}
+.header__containlogosleft {
+  display: flex;
+  justify-content: center;
+}
+.header__containlogosright {
+  display: flex;
+  justify-content: center;
+}

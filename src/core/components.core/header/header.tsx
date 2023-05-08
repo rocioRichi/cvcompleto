@@ -10,15 +10,32 @@ export function Header() {
   return (
     <>
       <header className="header">
-        <Link to={"/"}>Rocio Ricciardiello</Link>
+        <div className="header__logosandname">
+          <div className="header__containlogosleft">
+            <img
+              src="/logosleft.png"
+              alt="Logos programación"
+              className="header__left"
+            />
+          </div>
+          <section className="header__center">
+            <Link to={"/"}>Rocio Ricciardiello</Link>
 
-        <img
-          onClick={handleClick}
-          src={urlBlueGitHub}
-          className="header__avatargithub"
-          alt="Git Hub logo"
-        />
-
+            <img
+              onClick={handleClick}
+              src={urlBlueGitHub}
+              className="header__avatargithub"
+              alt="Git Hub logo"
+            />
+          </section>
+          <div className="header__containlogosright">
+            <img
+              src="/logosright.png"
+              alt="Logos programación"
+              className="header__right"
+            />
+          </div>
+        </div>
         <hr className="header__hr" />
       </header>
     </>

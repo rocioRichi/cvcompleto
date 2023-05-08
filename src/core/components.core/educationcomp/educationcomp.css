@@ -1,0 +1,14 @@
+.educationcomp {
+  display: flex;
+  margin: 2em;
+}
+.educationcomp__certificate {
+  font-weight: 700;
+}
+.educationcomp__trainingcenter {
+  font-style: italic;
+}
+.educationcomp__hr {
+  width: 40%;
+  margin: 10em;
+}

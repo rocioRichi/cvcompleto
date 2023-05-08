@@ -1,4 +1,4 @@
-export type Propstype = {
+export type PropsTypeTopic = {
   topic: string;
   whereDoWeGo: string;
 };

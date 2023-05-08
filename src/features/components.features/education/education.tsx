@@ -1,32 +1,68 @@
+import { Educationcomp } from "../../../core/components.core/educationcomp/educationcomp";
 import "./education.css";
 
 export function Education() {
   return (
     <section className="education">
       <ul className="education__ul">
-        <li>
-          2022.09 - 2023.03 Informática, <b>Javascript Full Stack</b>Development
-          Isdi Coders, Madrid
+        <li className="education__li">
+          <Educationcomp
+            startYear={2022}
+            startMonth={9}
+            endYear={2023}
+            endMonth={4}
+            certificate={"Javascript Full Stack"}
+            trainingCenter={"Isdi Coders"}
+            city={"Madrid"}
+          ></Educationcomp>
         </li>
-        <li>
-          2022.07 - 2022.12 Informática, Certificado de Profesionalidad Grado
-          III Desarrollo <b>Aplicaciones Web</b>. 550horas Academia Crespo,
-          Torrelavega
+        <li className="education__li">
+          <Educationcomp
+            startYear={2022}
+            startMonth={7}
+            endYear={2021}
+            endMonth={12}
+            certificate={
+              "Certificado de Profesionalidad Grado III Desarrollo Aplicacion Web"
+            }
+            trainingCenter={"Academia Crespo"}
+            city={"Torrelavega"}
+          ></Educationcomp>
         </li>
-        <li>
-          2017.09 - 2018.06 Formacion, Certificado Oficial de Formación
-          <b>Pedagógica y Didáctica</b> Universidad Internacional de Andalucia,
-          Sevilla
+        <li className="education__li">
+          <Educationcomp
+            startYear={2017}
+            startMonth={9}
+            endYear={2018}
+            endMonth={6}
+            certificate={
+              "Formacion, Certificado Oficial de Formación Pedagógica y Didáctica"
+            }
+            trainingCenter={"Universidad Internacional de Andalucia"}
+            city={"Sevilla"}
+          ></Educationcomp>
         </li>
-        <li>
-          2007.09 - 2009.06 Oficios Ténicos, Técnico Superior en
-          <b>Madera y Mueble</b>
-          IES Ricardo Bernardo, Solares
+        <li className="education__li">
+          <Educationcomp
+            startYear={2007}
+            startMonth={9}
+            endYear={2009}
+            endMonth={6}
+            certificate={"Técnico Superior en Madera y Mueble"}
+            trainingCenter={"IES Ricardo Bernardo"}
+            city={"Solares"}
+          ></Educationcomp>
         </li>
-        <li>
-          {" "}
-          2003.09 -2004.06 Diseño, <b>Técnico Multimedia </b>Kensington &
-          Chelsea College, Londres
+        <li className="education__li">
+          <Educationcomp
+            startYear={2003}
+            startMonth={9}
+            endYear={2004}
+            endMonth={6}
+            certificate={"Técnico Multimedia"}
+            trainingCenter={"Kensington & Chelsea College"}
+            city={"Londres"}
+          ></Educationcomp>
         </li>
       </ul>
     </section>

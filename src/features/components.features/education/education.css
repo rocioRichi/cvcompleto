@@ -13,3 +13,6 @@
 .education__bold {
   font-weight: 400;
 }
+.education__li {
+  margin: 1 em;
+}
