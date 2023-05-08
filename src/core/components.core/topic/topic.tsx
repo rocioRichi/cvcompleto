@@ -1,8 +1,8 @@
 import "./topic.css";
 import { Link } from "react-router-dom";
-import { Propstype } from "./propstype/propstype";
+import { PropsTypeTopic } from "./propstype/propstype";
 
-export function Topic(propsTopicLayer: Propstype) {
+export function Topic(propsTopicLayer: PropsTypeTopic) {
   const slash = "/";
   let topic = slash + propsTopicLayer.whereDoWeGo;
 

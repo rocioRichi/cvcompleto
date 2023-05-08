@@ -5,9 +5,11 @@ import "./navmenu.css";
 export function Navmenu() {
   return (
     <div className="navmenu">
-      <section className="navmenu__up">
-        <Topic topic={"Contact"} whereDoWeGo={"contact"}></Topic>
-        <Topic topic={"Technologies"} whereDoWeGo={"technologies"}></Topic>
+      <section className="navmenu__uplayer">
+        <section className="navmenu__upcenter">
+          <Topic topic={"Contact"} whereDoWeGo={"contact"} />
+          <Topic topic={"Technologies"} whereDoWeGo={"technologies"}></Topic>
+        </section>
       </section>
 
       <section className="navmenu__mediumlayer">
